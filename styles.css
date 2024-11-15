@@ -1,40 +1,111 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default browser styles */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    padding: 0;
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
-    color: #fff;
     text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
 }
 
-section {
-    padding: 2rem;
-    border-bottom: 1px solid #ddd;
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
 
-footer {
-    background: #f4f4f4;
+/* Home section styling */
+#home {
+    padding-top: 60px; /* Offset for fixed navbar */
     text-align: center;
-    padding: 1rem;
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+#home h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+#home p {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Section styles */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Resume section link style */
+#resume a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+
+/* Footer section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
